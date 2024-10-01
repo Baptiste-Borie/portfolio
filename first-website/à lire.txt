@@ -1,0 +1,8 @@
+La page bibliothèque de source fera office de 4ème page de contenu. 
+Bien que le hmtl sois simpliste. Le css quant à lui est assez poussé. 
+J'ai bien entendu demandé au préalable à mon chargé de tp si je pouvais considérer cette page comme une page de contenu 
+comme le CSS etait poussé , ce à quoi il a répondu que je pouvais.
+Egalement concernant cette page, elle est très sensible à la taille de l'écran et les boites bouge très facilement quand
+on réduit ou l'on augmente la fenêtre. ( A savoir que la résolution sur laquelle était a peu près de 1920x850)
+J'ai décidé de faire un média querie pour cette page à max-width :800 pixels pour les petits écran ou les boites était trop décalé. 
+Et un pour les grands écrans: min-height 1020px. 

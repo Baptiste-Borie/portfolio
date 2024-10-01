@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baptiste Borie</title>
+    <link rel="stylesheet" href="style/styleIndex.css">
+    <link rel="stylesheet" href="style/welcome.css">
+    <link rel="stylesheet" href="style/work.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+
+</head>
+
+<body>
+    <nav id="nav">
+        <ul>
+            <li>
+                <div>
+                    Baptiste Borie
+                </div>
+            </li>
+            <li>
+                <div><a href="#welcome">Me</a></div>
+            </li>
+            <li>
+                <div><a href="#work">Work</a></div>
+            </li>
+            <li>
+                <div><a href="#contact">Contact</a></div>
+            </li>
+        </ul>
+    </nav>
+    <div class="mainScreen">
+        <div class="progressDotsBox">
+            <div class="progressDots active"></div>
+            <div class="progressDots"></div>
+            <div class="progressDots"></div>
+        </div>        
+        <div class="section about">
+            <div class="welcome" id ="welcome">
+                    <h2>Welcome</h2>
+                    <div>
+                        Hi i'm Baptiste Borie. Student in computer science you will find on this website a showcase of my
+                        work and my universe.
+                    </div>
+                </div>
+        </div>
+        <div class="section work" id = work>
+            <div class ="titleSection">
+                <h2>My work</h2>
+                <div>
+                    You can find here some creations that I have made.
+                </div>
+            </div>
+                <div id = "imageTrack" >
+                <div class = "imageContainer" data-url="button/clickhere.html">
+                    <img class ="image" alt="buttonPages" src="assets/img/pressMe.png" >
+                    <div class ="imageContext">
+                        <h4>Button librairy</h4>
+                        <div class="trait"></div>
+                        Many buttons and many styles !
+                    </div>
+                </div>
+                <div class = "imageContainer" data-url="Art/galerie.html">
+                    <img class ="image" alt="GalleryImage" src="assets/img/flowerPot.png" >
+                    <div class ="imageContext">
+                        <h4>Art Gallery</h4>
+                        <div class="trait"></div>
+                        Pure css Art !
+                    </div>
+                </div>
+                <div class = "imageContainer" data-url="Art/vague/vague.html">
+                    <img class ="image" alt="WaveImage" src="assets/img/vague.png" >
+                    <div class ="imageContext">
+                        <h4>The Great Wave off Kanagawa</h4>
+                        <div class="trait"></div>
+                            A 8-bit reproduction of the great woodblock print made by Hokusai.
+                    </div>
+                </div>
+                <div class = "imageContainer" data-url="gameLife/gameLife.html">
+                    <img class ="image" alt="WaveImage" src="assets/img/gameLife.png    " >
+                    <div class ="imageContext">
+                        <h4>The game of life</h4>
+                        <div class="trait"></div>
+                            A small implementation of the game of life by Conway.
+                    </div>
+                </div>
+                <div class = "imageContainer" data-url="first-website/accueil.html">
+                    <img class ="image" alt="WaveImage" src="assets/img/firstwebsite.png" >
+                    <div class ="imageContext">
+                        <h4>First website</h4>
+                        <div class="trait"></div>
+                            My first website made with HTML and CSS, 3 years ago. 
+                    </div>
+                </div>          
+            </div>
+        </div>
+        <div class="section contact" id = "contact">
+            <div class = "titleSection">
+                <div>
+                    <H2>Contact Me !</H2>
+                </div>
+                <div> 
+                    Feel free to contact me for any informations ! 
+                </div>
+            </div>
+            <div class = "formContainer">
+                <form id="form">
+                    <ul>
+                        <li>Nom : </li>
+                        <li>
+                            <input type="text" id="name" name="user_name" placeholder="Name">
+                        </li>
+                        <li>Email :</li>
+                        <li>
+                            <input type="email" id="mail" name="user_email" placeholder="Email">
+                        </li>
+                        <li>Message : </li>
+                        <li>
+                            <textarea id="msg" name="user_message" placeholder="Message "></textarea>
+                        </li>
+                    </ul>
+                    <button type="submit" class = "button">
+                            <span>Send</span>
+                    </button>                           
+                </form>
+                </div>
+            </div>
+        </div>
+<script src="scriptIndex.js" type="module"></script>
+</body>
+</html>

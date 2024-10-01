@@ -1,0 +1,16 @@
+#sportif {
+  display: grid;
+  gap: 2%;
+  grid-template-columns: 0.5fr 0.5fr;
+  width: 80%;
+  margin-left: 8%;
+  margin-bottom: 5%;
+}
+#sportif div {
+  padding-top: 5%;
+}
+figcaption {
+  font-size: 70%;
+  font-style: italic;
+  margin-left: 2%;
+}

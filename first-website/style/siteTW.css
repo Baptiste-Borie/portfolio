@@ -1,0 +1,125 @@
+body {
+  background-image: linear-gradient(rgba(0, 89, 255, 0.74), rgb(0, 38, 73));
+  margin: 2em 5em;
+  padding: 0;
+  margin: 0;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+/* Menu navigation */
+.menu {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 12%;
+  background: rgb(5, 5, 49);
+  border-bottom-right-radius: 5%;
+}
+.menu h3 {
+  font-size: 150%;
+  color: white;
+  text-align: center;
+  background: rgb(37, 37, 128);
+  line-height: 250%;
+  user-select: none; /* rends cette boite "non cliquable" par l'utilisateur*/
+}
+.menu ul a {
+  display: block;
+  line-height: 50px;
+  border-top: grey solid 1px;
+  color: white;
+  padding-left: 5px;
+}
+.menu ul li:hover a {
+  padding-left: 15%;
+  background-color: rgb(35, 35, 128);
+  font-weight: 900;
+}
+/* fin menu navigation */
+/* Plongeur */
+#plongeur {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+/* Fin plongeur */
+/* Section */
+main {
+  background-color: white;
+  margin-right: 10%;
+  margin-left: 12%;
+  padding-bottom: 2%;
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+  padding: 2%;
+  border-bottom: rgb(3, 3, 88) solid 5px;
+  font-size: 500%;
+}
+section {
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: justify;
+}
+p {
+  padding: 2%;
+}
+img {
+  width: 90%;
+  margin: 2%;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2%;
+  background-color: rgb(5, 5, 49);
+  color: gray;
+  margin: 0;
+}
+footer a {
+  color: grey;
+}
+footer li {
+  font-size: 70%;
+  list-style: circle;
+}
+
+/*l'élément button sera améliorer afin de rendre toute la boite cliquable est pas seulement la boite content*/
+/* Début adapation média */
+@media (max-width: 1260px) {
+  #plongeur {
+    display: none;
+  }
+  .menu {
+    margin-top: 1%;
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+  }
+  .menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2%;
+  }
+  .menu ul a {
+    border-top: 0px;
+  }
+}
+/* valeur a partir de laquelle le titre "réaction du corps" passent sur deux lignes*/
+@media (max-width: 934px) {
+  .menu h3 {
+    display: none;
+  }
+  .menu ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .button {
+    width: 70%;
+  }
+}

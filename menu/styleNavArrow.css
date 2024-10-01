@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav1 {
+    background-color: rgba(4, 4, 181, 0.767);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav1 ul {
+    margin: 0;
+}
+
+.nav1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.nav1 li {
+    display: inline-flex;
+    padding: 1em;
+    margin-right: 2em;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    top: -25%;
+    right: -1.9em;
+    width: 2px;
+    height: 74%;
+    background-color: white;
+    transform-origin: bottom;
+}
+
+.line1 {
+    transform: rotate(-45deg);
+}
+
+.line2 {
+    transform: rotate(-135deg);
+}
+
+.nav1 li::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    transform-origin: left;
+    transition: 0.4s;
+}
+
+.nav1 li::after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: -0.2em;
+    right: -1.8em;
+    width: 0;
+    max-height: 1%;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid white;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+    transition-delay: 0.33s;
+}
+
+.nav1 li:hover::before {
+    width: 100%;
+}
+
+.nav1 li:hover::after {
+    transform: scaleX(1);
+}
+
+.nav1 li:hover a {
+    color: blue;
+}
+
+.nav1 li:not(:hover)::after {
+    border-left: 30px solid transparent;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition-delay: 0.4s;
+}

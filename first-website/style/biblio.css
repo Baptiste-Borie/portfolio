@@ -1,0 +1,455 @@
+/* Cette page n'étant que fait de css elle est très sensible à la taille de l'écran et ce fut très compliqué pour les médiaqueries. */
+* {
+  margin: 0px;
+}
+#background {
+  background: url(../images/biblio.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh; /* Originellement j'avais mis 100% mais pour une raison qui m'est encore inconnue à ce jour 100% mettait la height à 0 et ce changement est apparu du jour au lendemain. J'ai donc mis vh. */
+}
+
+#popup {
+  position: fixed;
+  left: 30%;
+  top: 60%;
+  background-color: rgba(32, 10, 10, 0.616);
+  color: goldenrod;
+  width: 41%;
+  height: 20%;
+  border: 2px solid goldenrod;
+  text-align: center;
+  padding: 1%;
+}
+h1 {
+  margin-top: 8%;
+}
+#contenu {
+  display: none;
+  margin-top: 4%;
+}
+#popup:hover h1 {
+  display: none;
+}
+#popup:hover #contenu {
+  display: block;
+}
+
+.source {
+  position: fixed;
+  border: 2px solid rgba(218, 165, 32, 0.356);
+}
+.source a {
+  display: none;
+  text-align: center;
+  background-color: rgba(32, 10, 10, 0.616);
+  color: goldenrod;
+  text-decoration: none;
+}
+.source:hover a {
+  display: block;
+}
+
+#page_accueil {
+  position: fixed;
+  margin-left: 23%;
+  margin-top: 0.5%;
+  width: 13.5%;
+  height: 9.5%;
+  border: 2px solid rgba(218, 165, 32, 0.356); /* Je laisse des bordures afin que l'utlisateur visualise plus facilement ces dernière. Je réduis cependant la transparence afin que la bordure reste discrète */
+}
+#page_accueil a {
+  display: none;
+  text-align: center;
+  color: goldenrod;
+  text-decoration: none;
+  padding: 11%;
+}
+#page_accueil:hover a {
+  display: block;
+}
+#src_acc_1 {
+  margin-left: 23%;
+  margin-top: 5%;
+  width: 13.5%;
+  height: 9.5%;
+}
+#src_acc_1 a {
+  padding: 11%;
+  height: 40%;
+}
+
+#src_acc_2 {
+  margin-left: 23%;
+  margin-top: 10.8%;
+  width: 13.5%;
+  height: 11%;
+}
+#src_acc_2 a {
+  padding: 11%;
+  height: 40%;
+}
+#src_acc_3 {
+  margin-left: 23%;
+  margin-top: 17%;
+  width: 13.5%;
+  height: 10.5%;
+}
+#src_acc_3 a {
+  padding: 11%;
+  height: 40%;
+}
+
+#Page_Corps {
+  position: fixed;
+  margin-left: 38%;
+  margin-top: 0%;
+  width: 13.5%;
+  height: 8%;
+}
+#Page_Corps a {
+  display: none;
+  text-align: center;
+  color: goldenrod;
+  text-decoration: none;
+  padding: 11%;
+}
+#Page_Corps:hover a {
+  display: block;
+}
+#src_corps_1 {
+  margin-left: 38%;
+  margin-top: 5%;
+  width: 13.5%;
+  height: 9.5%;
+}
+#src_corps_1 a {
+  height: 52%;
+  padding: 8%;
+}
+#src_corps_2 {
+  margin-left: 38%;
+  margin-top: 11%;
+  width: 13.5%;
+  height: 9.5%;
+}
+#src_corps_2 a {
+  height: 52%;
+  padding: 8%;
+}
+#src_corps_3 {
+  margin-left: 38%;
+  margin-top: 17.5%;
+  width: 13.5%;
+  height: 9.5%;
+}
+#src_corps_3 a {
+  height: 52%;
+  padding: 8%;
+}
+
+#page_performance {
+  position: fixed;
+  margin-left: 53.5%;
+  margin-top: -0.5%;
+  width: 13.5%;
+  height: 8%;
+}
+#page_performance a {
+  display: none;
+  text-align: center;
+  color: goldenrod;
+  text-decoration: none;
+  padding: 11%;
+}
+#page_performance:hover a {
+  display: block;
+}
+#src_performance_3 {
+  margin-left: 53.5%;
+  margin-top: 16.5%;
+  width: 13.5%;
+  height: 12%;
+}
+#src_performance_3 a {
+  height: 52%;
+  padding: 8%;
+}
+#src_performance_2 {
+  margin-left: 53.5%;
+  margin-top: 10.25%;
+  width: 13.5%;
+  height: 12.73%;
+}
+#src_performance_2 a {
+  height: 53.5%;
+  padding: 8%;
+}
+#src_performance_1 {
+  margin-left: 53.5%;
+  margin-top: 4.2%;
+  width: 13.5%;
+  height: 12.73%;
+}
+#src_performance_1 a {
+  height: 53.5%;
+  padding: 8%;
+}
+
+#page_france {
+  position: fixed;
+  margin-left: 72.5%;
+  margin-top: -0.5%;
+  width: 13.5%;
+  height: 8%;
+}
+#page_france a {
+  display: none;
+  text-align: center;
+  color: goldenrod;
+  background-color: rgba(32, 10, 10, 0.616);
+  /* J'ai rajoute ce fond pour cette cellule pour que le texte reste visible malgrès la lampe */
+  text-decoration: none;
+  padding: 8%;
+}
+#page_france:hover a {
+  display: block;
+}
+#src_france_1 a {
+  height: 50%;
+  padding: 10%;
+}
+#src_france_1 {
+  margin-left: 72.5%;
+  margin-top: 4.5%;
+  width: 13.5%;
+  height: 12.73%;
+}
+#src_france_2 a {
+  height: 56%;
+  padding: 10%;
+}
+#src_france_2 {
+  margin-left: 72.5%;
+  margin-top: 10%;
+  width: 13.5%;
+  height: 13%;
+}
+#src_france_3 a {
+  height: 48%;
+  padding: 10%;
+}
+#src_france_3 {
+  margin-left: 72%;
+  margin-top: 17%;
+  width: 13.5%;
+  height: 10%;
+}
+
+/* La page étant très sensible aux changement d'échelle j'ai décidé de ne faire qu'un gros médiaqueries à 800 pixels pour les petis écrans. */
+@media (max-width: 800px) {
+  #page_accueil {
+    width: 16%;
+    margin-left: 17%;
+    margin-top: 8%;
+    border: none;
+  }
+  #src_acc_1 {
+    width: 16%;
+    margin-left: 17%;
+    margin-top: 13.8%;
+  }
+  #src_acc_2 {
+    height: 9%;
+    width: 16%;
+    margin-left: 17%;
+    margin-top: 20%;
+  }
+  #src_acc_3 {
+    height: 9%;
+    width: 16%;
+    margin-left: 17%;
+    margin-top: 28%;
+  }
+  #Page_Corps {
+    width: 15%;
+    margin-top: 7.5%;
+    margin-left: 36%;
+  }
+  #src_corps_1 {
+    width: 15%;
+    margin-top: 13%;
+    margin-left: 36%;
+  }
+  #src_corps_2 {
+    width: 16.5%;
+    margin-top: 20%;
+    margin-left: 35.5%;
+  }
+  #src_corps_3 {
+    width: 16.5%;
+    margin-top: 28.5%;
+    margin-left: 35.5%;
+  }
+  #page_performance {
+    width: 16.5%;
+    height: 7%;
+    margin-top: 6.5%;
+    margin-left: 55%;
+  }
+  #src_performance_1 {
+    height: 9%;
+    width: 17%;
+    margin-top: 12.5%;
+    margin-left: 54.5%;
+  }
+  #src_performance_2 {
+    height: 10.5%;
+    width: 17%;
+    margin-top: 20%;
+    margin-left: 54.5%;
+  }
+  #src_performance_3 {
+    height: 10.5%;
+    width: 17%;
+    margin-top: 27.5%;
+    margin-left: 54.5%;
+  }
+  #page_france {
+    width: 16.5%;
+    height: 7%;
+    margin-top: 6.5%;
+    margin-left: 78%;
+  }
+  #src_france_1 {
+    height: 9%;
+    width: 17%;
+    margin-top: 12.5%;
+    margin-left: 78%;
+  }
+  #src_france_2 {
+    height: 12%;
+    width: 17%;
+    margin-top: 19%;
+    margin-left: 78%;
+  }
+  #src_france_3 {
+    height: 10.5%;
+    width: 17%;
+    margin-top: 27.5%;
+    margin-left: 78%;
+  }
+}
+
+@media (min-height: 1020px) {
+  .source {
+    border: none;
+  }
+  #page_accueil {
+    width: 16%;
+    margin-left: 22%;
+    margin-top: 4.5%;
+    border: none;
+  }
+  #src_acc_1 {
+    width: 14%;
+    margin-left: 23%;
+    margin-top: 9%;
+  }
+  #src_acc_2 {
+    height: 9%;
+    width: 14%;
+    margin-left: 23%;
+    margin-top: 15%;
+  }
+  #src_acc_3 {
+    height: 9%;
+    width: 14%;
+    margin-left: 23%;
+    margin-top: 21%;
+  }
+  #Page_Corps {
+    width: 15%;
+    margin-top: 4.5%;
+    margin-left: 37.5%;
+  }
+  #src_corps_1 {
+    width: 13%;
+    margin-top: 9%;
+    margin-left: 38%;
+  }
+  #src_corps_2 {
+    width: 13%;
+    margin-top: 15%;
+    margin-left: 38%;
+  }
+  #src_corps_3 {
+    width: 13.5%;
+    margin-top: 21.5%;
+    margin-left: 38.5%;
+  }
+  #page_performance {
+    width: 13%;
+    height: 7%;
+    margin-top: 4%;
+    margin-left: 54%;
+  }
+  #src_performance_1 {
+    height: 10%;
+    width: 14.5%;
+    margin-top: 8%;
+    margin-left: 54%;
+  }
+  #src_performance_1 a {
+    padding-top: 18%;
+  }
+  #src_performance_2 {
+    height: 10%;
+    width: 14.5%;
+    margin-top: 14%;
+    margin-left: 52;
+  }
+  #src_performance_2 a {
+    padding-top: 18%;
+  }
+  #src_performance_3 {
+    height: 10.5%;
+    width: 14.5%;
+    margin-top: 20%;
+    margin-left: 53%;
+  }
+  #src_performance_3 a {
+    padding-top: 18%;
+  }
+  #page_france {
+    width: 13%;
+    height: 7%;
+    margin-top: 4%;
+    margin-left: 72%;
+  }
+  #src_france_1 {
+    height: 9%;
+    width: 13%;
+    margin-top: 9%;
+    margin-left: 72%;
+  }
+  #src_france_2 {
+    height: 11%;
+    width: 13%;
+    margin-top: 14%;
+    margin-left: 72.5%;
+  }
+  #src_france_3 {
+    height: 10.5%;
+    width: 14%;
+    margin-top: 21%;
+    margin-left: 72%;
+  }
+}
+@media (max-width: 1200px) {
+  * {
+    font-size: 95%;
+  }
+}

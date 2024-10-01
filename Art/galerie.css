@@ -1,0 +1,460 @@
+body{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+#mainWall {
+    background-color: rgb( 183, 217, 251);
+    height: 80%;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-auto-flow: column;
+    grid-gap: 250px;
+    border-bottom: 5px solid gray;
+    z-index: 1;
+    
+}
+#mainWall > :first-child {
+    margin-left : 150px;
+    margin-right: 50px;
+}
+#floor{
+    margin-top: 50px;
+    background-color: rgb(57, 51, 51);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#tapis {
+    z-index: 3;
+    position: relative;
+    cursor: pointer;
+    top : 40px;
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    perspective: 1000px;
+    transform: skew(-45deg);
+}
+
+#liseret{
+    z-index: 3;
+    position: relative;
+    cursor: pointer;
+    top : 7px;
+    left :5px;  
+    width: 280px;
+    height: 100px;
+    border: 5px solid gold;
+    border-top: 3px solid gold;
+    perspective: 1000px;
+}
+.cadre{
+    resize: none;
+    position: relative;
+    border: 15px inset rgb( 84, 63, 41) ;
+}
+
+
+/* ------------------------------ Flower -------------------------- */
+#flowerPot {
+    top: 30px ;
+    position:relative;
+    width : 230px;
+    height: 380px;
+}
+.cadreFlower{
+    width : 200px;
+    height: 350px;
+    background-color: rgb(244, 244, 180);
+}
+
+.backPot {
+    position: relative;
+    display: flex;
+    width: 60px;
+    height: 0px;
+    left :60px;
+    top: 260px;
+    border-right: 10px solid transparent;   
+    border-left: 10px solid transparent;
+    border-top: 65px solid #853a26;
+}
+
+.top{
+    position: absolute;
+    left: 49px;
+    top : 240px;
+    width: 100px;
+    height: 20px;
+    background-color: #853a26;
+}
+
+.topshadow{
+    position: relative;
+    z-index: 2;
+    left: 61px;
+    top : 195px;
+    width: 73px;
+    height: 0px;
+    border-left: 3px solid transparent;
+    border-right:3px solid transparent ;
+    border-top: 10px solid #00000047;
+}
+
+.tige{
+    position: relative;
+    top: 86px;
+    left:98px;
+    width : 5px;
+    height: 80px;
+    background-color: green;
+}
+
+.coeur {
+    z-index: 2;
+    position: absolute;
+    top:125px;  
+    left:82px; 
+    background-color: yellow;
+    width: 35px;
+    height: 35px;
+    border-radius: 999px;
+}
+
+.leaf{
+    width: 15px;
+    height: 15px;
+    top : 210px;
+    left : 83px;
+    position: absolute;
+    background-color: green;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    transform: skewX(-12deg) skewY(4deg) rotate(5deg); 
+    
+}
+
+.leafshadow{
+    width: 8px;
+    height: 8px;
+    top : 216px;
+    left : 89px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.419);
+    border-radius: 50px;
+    border-top-right-radius: 0  ;
+    transform: skewX(-12deg) skewY(4deg) rotate(15deg);
+    
+}
+
+.leaf2{
+    width: 15px;
+    height: 15px;
+    top : 180px;
+    left : 105px;
+    position: absolute;
+    background-color: green;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    /*     transform: rotate(-283deg) skewX(-12deg)  skewY(-4deg); 
+    */  transform: skewX(-12deg) skewY(4deg) rotate(205deg); 
+    
+}
+
+.leafshadow2{
+    width: 8px;
+    height: 8px;
+    top : 185.5px;
+    left : 105px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.419);
+    border-radius: 50px;
+    border-top-right-radius: 0  ;
+    /*     transform: rotate(-283deg) skewX(-12deg)  skewY(-4deg); 
+    */  transform: skewX(-12deg) skewY(4deg) rotate(208deg);
+    
+}
+
+.petale{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+}
+
+.pet1{
+    top : -40px;
+    z-index: 1;
+    left : 109px;
+    transform: skewX(-10deg) skewY(8deg) rotate(180deg); 
+}
+
+.pet2{
+    top : -80px;
+    left : 82px;
+    z-index: 1;
+    transform: skewX(-10deg) skewY(8deg) rotate(110deg); 
+}
+
+.pet3{
+    top : -96px;
+    z-index: 1;
+    left : 60px;
+    transform: skewX(-10deg) skewY(8deg) rotate(60deg); 
+}
+
+.pet4{
+    transform: skewX(-10deg) skewY(8deg)rotate(-10deg); 
+    top: -102px;
+    left: 70px;
+}
+
+.pet5 {
+    transform: skewX(-10deg) skewY(8deg) rotate(260deg); 
+    top: -132px;
+    left: 100px;
+}
+
+/* ------------------------- Big Button -----------------------------*/
+
+.cadreButton{
+    width: 200px;
+    height: 250px;
+    background-color: rgb(250, 205, 211);
+}
+#bigButton{
+    position: relative;
+    top: 90px;
+    width: 230px;
+    height: 280px;
+}
+#textButton {
+    font-family: Roboto;
+    color: white;
+    position : relative;
+    z-index: 3;
+    letter-spacing: 1px;
+    font-size: 3em;
+    top: -10px;
+    text-transform: uppercase;
+    transform: perspective(400px)rotateX(30deg);
+}
+
+.button5 {
+    position: relative;
+    width: 140px;
+    height: 116.8px;
+    top: 60px;
+    left: 30px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    outline: 23.3px solid #eb96a6;
+    border-radius: 100%;
+    transition: .3s;
+}
+
+.button5 .front {
+    display: block;
+    position: relative;
+    z-index: 2;
+    width : 140px;
+    height: 118px;
+    top: -220px;
+    left: -6px  ;
+    background:linear-gradient(#ff5a78,#d54a60);
+    border : 2.8px solid #95323c ;
+    border-radius : 100%;
+    transform: translateY(-15%);
+    transition: .15s;
+}
+
+.button5 .backButton {
+    position: relative;
+    display :block;
+    z-index: 1;
+    top: -100px;
+    left: -6px;
+    width: 98px;
+    height : 74.7px;
+    border : 23.3px solid #95323c;  
+    border-radius: 100%;
+    
+}
+
+.button5 .front:active {
+    transform: translateY(-5%);
+    box-shadow: 0 0;
+}
+
+/* ----------------------------- Tobi ------------------------------ */
+
+.cadretobi{
+    width: 300px;
+    height: 400px;
+    background-color: crimson;
+}
+#tobi{
+    position: relative;
+    left: -60px;
+    top: 20px;
+    width: 230px;
+    height: 280px;
+}
+
+#stick{
+    position: relative;
+    width: 35px;
+    height: 105px;
+    background-color: #d28b51;
+    border-radius: 99px ;
+    left: 130px;
+    top: 270px;
+}
+
+
+#logoIceCream{
+    color: #4c2404;
+    display: flex;
+    font-size: 10px;
+    top: 80px;
+    left: 8px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 99px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #4c2404;
+}
+
+#mainIce {
+    position: relative;
+    width:  140px;
+    height: 255px;
+    top: -70px;
+    left: 75px;
+    background-color: #fffac8;
+    border-radius: 99px ;
+}
+
+#mainChocolat {
+    position: relative;
+    top: 59px;
+    width: 140px;
+    height: 196px;
+    background-color: #39200a;
+    border-radius: 5px  0 99px 99px;
+    
+}
+
+#croc1 {
+    position: relative;
+    z-index: 99;
+    top: -160px;
+    left: -15px;
+    width: 35px;
+    height: 35px;
+    background-color: crimson; 
+    border-radius: 99px ;
+}
+
+#croc2 {
+    position: relative;
+    top: -234px;
+    left: 72px;
+    width: 63px;
+    height: 63px;
+    background-color: #39200a; 
+    border-radius:9px 99px  0  0 ;
+    transform: skew(10deg);
+}
+
+#croc3 {
+    position: relative;
+    top: -297px;
+    left: 41px;
+    width: 56px;
+    height: 80px;
+    background-color: #39200a ; 
+    border-radius: 99px ;
+}
+
+#croc4 {
+    position: relative;
+    top: -348px;
+    left: 14px;
+    width: 39px;
+    height:39px;
+    background-color: #fffac8; 
+    border-radius: 99px ;
+}
+
+#croc5 {
+    position: relative;
+    z-index: 99;
+    top: -390px;
+    left: 0px;
+    width: 21px;
+    height: 21px;
+    background-color: crimson; 
+    border-radius: 99px ;
+}
+
+#face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 41px;
+    position: relative;
+    top: -250px;
+}
+
+#eyes {
+    display: flex;
+    justify-content: space-between;
+    width: 101px;
+}
+
+.eye {
+    width: 12.5px;
+    height: 12.5px;
+    background: #221505;
+    border-bottom: 2px solid #653a1d;
+    border-radius: 100%;
+}
+
+.eye::before {
+    display: block;
+    content: '';
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3.5px;
+    height: 3.5px;
+    background: #fff;
+    border-radius: 100%;
+  }
+  
+  #mouth {
+    width: 52.5px;
+    height: 17.5px;
+    background: #221505;
+    border-radius: 10px;
+    border-bottom: 2px solid #653a1d    ;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }

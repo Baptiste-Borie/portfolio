@@ -1,0 +1,69 @@
+/* Le design du tableau est insipiré des tableaux type wikipédia. Leur style épuré et simple pour les tableaux me parraisait interessant. J'ai donc essayé de m'en rapprocher sans regarder le code ni de tuto mais avec mes conaissances. */
+table {
+  margin-left: 5%;
+  width: 90%;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 0.8%;
+  text-align: justify;
+}
+th {
+  font-size: 120%;
+  background-color: rgba(8, 0, 77, 0.548);
+}
+td {
+  font-size: 100%;
+  vertical-align: middle;
+  padding-left: 2px;
+}
+td img {
+  width: 8%;
+  vertical-align: middle;
+}
+table a {
+  font-style: italic;
+}
+.nation {
+  vertical-align: middle;
+}
+.nationalité {
+  width: 20%;
+}
+
+/* Partie 2 de la page */
+#No_limit img {
+  width: 80%;
+}
+#No_limit figcaption {
+  font-size: 70%;
+  font-style: italic;
+}
+#No_limit figure {
+  text-align: right;
+  grid-row-start: span 2;
+}
+
+#No_limit {
+  margin-left: 15%;
+  display: grid;
+  grid-template-columns: 20em 20em;
+  gap: 3%;
+}
+@media (max-width: 1260px) {
+  th {
+    font-size: 80%;
+  }
+
+  #No_limit {
+    margin-left: 0;
+  }
+}
+@media (max-width: 910px) {
+  #No_limit {
+    display: block;
+  }
+}

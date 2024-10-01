@@ -1,0 +1,108 @@
+/*  ------------------------------ CONTACT  ------------------------------  */
+
+.contact{
+    background-color: rgba(8, 6, 32, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formContainer {
+    margin-bottom : 1em;
+}
+.formContainer ul {
+    list-style-type: none;
+}
+.formContainer input,textarea {
+    height:10vh;
+    width: 20vw;
+    background-color: #161a2c;
+    border : 1px solid #858fac;
+    border-radius: 10px;
+    padding-left: 10px ;
+    margin-bottom: 1em;
+    color: white;
+}
+.formContainer textarea{
+    padding-top: 20px ;
+}
+.formContainer  li {
+    color : #858fac;
+}
+
+.formFooter img {
+    width: 24px;
+}
+
+.button {
+    display: inline-flex;
+    position: relative;
+    background: white;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+    padding : 0.7em;
+    text-transform: uppercase;
+    width: 11em;
+    height: 5em;
+    border :0 ;
+    border-radius: 8px;
+} 
+.button::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    background-color: var(--main-blue);
+    border: 1px solid white;
+    border-radius: 8px;
+} 
+.button:hover::after{
+    left: 0;
+    transition: 0.6s;
+    width: 11em;
+    height: 5em;
+}
+
+.button:active{
+    transform: translateY(5%);
+}
+
+.button span{
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+    color : var(--main-blue);
+
+}
+
+.button:hover span {
+    color :white;
+    animation : scaleUp 0.4s ease-in-out;
+}
+@keyframes scaleUp {
+    0% {
+    transform: scale(1);
+    }
+
+    50% {
+    transform: scale(0.8);
+    }
+
+    100% {
+    transform: scale(1);
+    }
+}
+
+@media (max-width: 1200px) {
+    .formContainer input,textarea {
+        width: 40vw;
+    }
+    
+}

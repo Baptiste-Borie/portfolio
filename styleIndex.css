@@ -1,0 +1,310 @@
+/* ------------------------------ GENERAL  ------------------------------ */
+:root{
+    --main-blue : rgba(8, 6, 32, 1);
+    --lightblue : #15192c;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+
+html {
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Roboto;
+}
+
+
+h2{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.section {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display : grid;
+    grid-template-columns: 5fr 1fr;
+} 
+nav{
+    position: fixed;
+    top: 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+}
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr 1fr ;
+    align-items: center;
+    height: 10vh;
+    gap: 1em;
+}
+nav li {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+nav li:first-child {
+    margin-right: 65em;
+}
+.titleSection{ 
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top  : 2em;
+    height: 35vh;
+}
+/*  ------------------------------ PROGRESS DOTS ------------------------------  */
+.progressDotsBox {
+    order :1 ;
+    position: fixed;
+    top: 50vh;
+    right: 2vw;
+    transform: translateY(-50%);
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.progressDots {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: black;
+    transition: background-color 0.3s ease; /* Animation de transition de la couleur de fond */
+}
+
+.progressDots.active {
+    background-color: white;
+}
+.selected {
+    border: 6px solid white;
+}
+/*  ------------------------------ ABOUT  ------------------------------  */
+.about{
+    background: linear-gradient(-45deg, rgb(5, 1, 69), rgb(82, 8, 230),rgb(85, 0, 255), rgb(170, 26, 247));
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
+.welcome{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: justify;
+}
+.about h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10em;
+    margin: 0;
+}
+.welcome div {  
+    margin :0;
+    width: 25%;
+    text-align:center;
+    
+}
+
+/*  ------------------------------ WORK  ------------------------------  */
+.work{
+    background-color: rgba(8, 6, 32, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+#imageTrack{
+    display: flex;
+    overflow:scroll;
+    overflow-y: hidden;
+    width: 80vw;
+    gap: 15px;
+    transition: transform 0.3s;
+}
+.image {
+    width: 205px;
+    height: 20em;
+    object-fit: cover;
+    object-position: center ;
+    opacity: 1;
+}
+.imageContainer:first-child{
+    margin-left: 5em;
+}
+.imageContext {
+    background-color: rgba(41, 33, 33, 0.5);
+    color: white;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    padding: 5px;
+}
+.imageContext h4 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.imageContainer:hover > .imageContext{
+    transition: 0.5s;
+    transform: translateY(-100%);
+}
+.imageContainer:not(:hover) > .imageContext{
+    transition: 0.5s;
+    transform: translateY(100%);
+}   
+.trait{
+    width: 50px;
+    border: 1px solid white;
+    margin-bottom: 15px;
+}
+
+.imageContainer {
+    padding: 0;
+    margin: 0;
+    width: 205px ;
+    height: 320px;
+    border : 1px solid gray;
+}
+
+/*  ------------------------------ CONTACT  ------------------------------  */
+
+.contact{
+    background-color: rgba(8, 6, 32, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formContainer {
+    margin-bottom : 1em;
+}
+.formContainer ul {
+    list-style-type: none;
+}
+.formContainer input,textarea {
+    height:10vh;
+    width: 20vw;
+    background-color: #161a2c;
+    border : 1px solid #858fac;
+    border-radius: 10px;
+    padding-left: 10px ;
+    margin-bottom: 1em;
+    color: white;
+}
+.formContainer textarea{
+    padding-top: 20px ;
+}
+.formContainer  li {
+    color : #858fac;
+}
+
+.formFooter img {
+    width: 24px;
+}
+
+.button {
+    display: inline-flex;
+    position: relative;
+    background: white;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+    padding : 0.7em;
+    text-transform: uppercase;
+    width: 11em;
+    height: 5em;
+    border :0 ;
+    border-radius: 8px;
+} 
+.button::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    background-color: var(--main-blue);
+    border: 1px solid white;
+    border-radius: 8px;
+} 
+.button:hover::after{
+    left: 0;
+    transition: 0.6s;
+    width: 11em;
+    height: 5em;
+}
+
+.button:active{
+    transform: translateY(5%);
+}
+
+.button span{
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+    color : var(--main-blue);
+
+}
+
+.button:hover span {
+    color :white;
+    animation : scaleUp 0.4s ease-in-out;
+}
+@keyframes scaleUp {
+    0% {
+    transform: scale(1);
+    }
+
+    50% {
+    transform: scale(0.8);
+    }
+
+    100% {
+    transform: scale(1);
+    }
+}

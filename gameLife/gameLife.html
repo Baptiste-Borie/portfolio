@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of life</title>
+    <link rel="stylesheet" href="styleLife.css ">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <div id="grid">
+        <div id="menu">
+            <h1>Conway's Game of Life</h1>
+            <label for="rowsInput">Nombre de lignes:</label>
+            <input type="number" id="rowsInput" value="20">
+            <label for="colsInput">Nombre de colonnes:</label>
+            <input type="number" id="colsInput" value="20">
+            <div id="build">
+                
+            </div>
+            <div>
+                <button id="startBtn">Démarrer la simulation</button>
+                <button id="stopBtn">Arrêter la simulation</button>
+                <button id="updateBtn">Mettre à jour la grille</button>    
+            </div>
+            <div id="generationCount">Génération : 0</div>
+        </div>
+        <div id="grid-container"></div>
+    </div>
+</body>
+</html>

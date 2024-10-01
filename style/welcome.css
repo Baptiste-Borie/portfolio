@@ -1,0 +1,61 @@
+/*  ------------------------------ ABOUT  ------------------------------  */
+.about{
+    background: linear-gradient(-45deg, rgb(5, 1, 69), rgb(82, 8, 230),rgb(85, 0, 255), rgb(170, 26, 247));
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
+.welcome{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: justify;
+}
+.about h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10em;
+    margin: 0;
+}
+.welcome div {  
+    margin :0;
+    width: 25%;
+    text-align:center;
+    
+}
+
+@media (max-width: 1200px) {
+    .about h2 {
+        padding-left: 5px;
+        font-size: 8.5em;
+    }
+    .welcome div {
+        width: 50%;
+    }
+    
+    
+}
+
+@media (max-width: 500px) {
+    .about h2 {
+        padding-left: 5px;
+        font-size: 4.85em;
+    }
+    .welcome div {
+        width: 50%;
+    }
+    
+    
+}
+

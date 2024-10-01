@@ -1,0 +1,128 @@
+/* ------------------------------ GENERAL  ------------------------------ */
+:root{
+    --main-blue : rgba(8, 6, 32, 1);
+    --lightblue : #15192c;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+html {
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Roboto;
+}
+
+
+h2{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.section {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display : grid;
+    grid-template-columns: 5fr 1fr;
+} 
+nav{
+    position: fixed;
+    top: 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+}
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr 1fr ;
+    align-items: center;
+    height: 10vh;
+    gap: 1em;
+}
+nav li {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+nav li:first-child {
+    margin-right: 65em;
+}
+.titleSection{ 
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top  : 2em;
+    height: 35vh;
+}
+/*  ------------------------------ PROGRESS DOTS ------------------------------  */
+.progressDotsBox {
+    order :1 ;
+    position: fixed;
+    top: 50vh;
+    right: 2vw;
+    transform: translateY(-50%);
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.progressDots {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: black;
+    transition: background-color 0.3s ease; /* Animation de transition de la couleur de fond */
+}
+
+.progressDots.active {
+    background-color: white;
+}
+.selected {
+    border: 6px solid white;
+}
+
+
+/* Media querry */
+
+@media (max-width: 1200px) {
+    html {
+        margin: 0 ;
+        padding: 0;
+        font-size: 16px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    nav{
+        display: none;
+    }
+    .progressDots {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+.carre{
+
+    background-color: black;
+    height: 10em;
+    width: 10em;
+    border-top: solid 10px red;
+    border-left: solid  10px blue;
+    border-right: solid 10px green;
+}

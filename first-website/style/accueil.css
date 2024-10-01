@@ -1,0 +1,72 @@
+#images_disciplines {
+  align-content: center;
+  display: grid;
+  gap: 8%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 12%;
+  margin-bottom: 2%;
+}
+figure {
+  text-align: center;
+}
+figcaption {
+  font-size: 90%;
+  font-style: italic;
+}
+#disciplines {
+  padding-bottom: 2%;
+}
+#intro_site {
+  border-bottom: 3px solid rgb(5, 5, 49);
+  width: 80%;
+  text-align: center;
+  margin-left: 7%;
+}
+span {
+  font-size: 60%;
+}
+#sommaire_détaillé {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+#img_apnée {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+#img_record {
+  margin-top: 2%;
+}
+#img_arnaud {
+  width: 55%;
+  margin-left: 10%;
+}
+#Info_pageCorps {
+  margin-top: 10%;
+}
+#Info_pagePerformance {
+  margin-top: 5%;
+}
+#Info_pageFrance {
+  margin-top: 5%;
+}
+/* button */
+.button {
+  display: block;
+  background-color: rgb(1, 1, 65);
+  border: 1px solid rgba(0, 89, 255, 0.74);
+  margin: 2%;
+  width: 40%;
+  padding: 2%;
+  text-align: center;
+  border-radius: 5%;
+}
+.button a {
+  font-size: 120%;
+  color: white;
+}
+.button:hover {
+  background-color: rgb(3, 3, 88);
+}
+/* fin button */

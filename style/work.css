@@ -1,0 +1,63 @@
+/*  ------------------------------ WORK  ------------------------------  */
+.work{
+    background-color: rgba(8, 6, 32, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+#imageTrack{
+    display: flex;
+    overflow:scroll;
+    overflow-y: hidden;
+    width: 80vw;
+    gap: 15px;
+    transition: transform 0.3s;
+}
+.image {
+    width: 205px;
+    height: 20em;
+    object-fit: cover;
+    object-position: center ;
+    opacity: 1;
+}
+.imageContainer:first-child{
+    margin-left: 5em;
+}
+.imageContext {
+    background-color: rgba(41, 33, 33, 0.5);
+    color: white;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    padding: 5px;
+}
+.imageContext h4 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.imageContainer:hover > .imageContext{
+    transition: 0.5s;
+    transform: translateY(-100%);
+}
+.imageContainer:not(:hover) > .imageContext{
+    transition: 0.5s;
+    transform: translateY(100%);
+}   
+.trait{
+    width: 50px;
+    border: 1px solid white;
+    margin-bottom: 15px;
+}
+
+.imageContainer {
+    padding: 0;
+    margin: 0;
+    width: 205px ;
+    height: 320px;
+    border : 1px solid gray;
+}

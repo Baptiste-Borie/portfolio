@@ -1,0 +1,307 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.title{
+    font-family: "Roboto" ;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.title nav {
+    display: grid;
+    text-transform: uppercase;
+    grid-template-columns: 1fr 10fr;
+    letter-spacing: 1px;
+    margin :0;
+    width: 100vw;
+    padding-top: 1em ;
+    padding-bottom: 1em;
+    color :white ;
+    user-select: none;
+    background-color: #262626;
+}
+.title h1{
+    display :flex;
+    justify-content: center;
+    transform: translateX(-5%);
+}
+.title #home{
+    margin-left: 1em;
+    cursor: pointer;
+}
+.title div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+button{
+    margin:1em;
+}
+.button1 {
+    font-size: 1.5em;
+    font-family: 'Open sans', sans-serif;
+    position: relative;
+    letter-spacing: 2px;
+    cursor : pointer;
+    text-transform: uppercase;
+    border-radius: 0;
+    border : 2px solid black;
+    box-shadow: 5px 5px 0px black;
+    padding: 0.25em 0.5em;
+    user-select: none;/* Empeche l'utilisateur de selectionnez.  */
+    -webkit-user-select: none;/* pareil pour safari et ancien navigateur */
+    touch-action: manipulation;/* Pour tactile. Permet d'etre cliquable et pas de manip bizarre */
+    
+}
+.button1 :active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+    
+}
+
+.button2 {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:pointer;
+    border : 2px solid black;
+    border-radius: 8px;
+    padding : 0.25em 0.5em;
+    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button2:hover{
+    box-shadow: 0 0 0 0;
+    transition: 0.5s;
+}
+
+.button3 {
+    background-color:#5e5df0 ;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:pointer;
+    border : 1px solid #5e5df0;
+    border-radius: 999px;
+    padding : 0.25em 0.5em;
+    color : white;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-sizing: border-box;
+    
+}
+
+.button4 {
+    background:linear-gradient(to left,#465ab5,#663ed5);
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:pointer;
+    border : 1px solid #5e5df0;
+    padding : 0.25em 0.5em;
+    color : white;
+    border-radius:8px;
+    padding:  1em ;
+}
+
+.button4:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+.button5 {
+    margin : 1em;
+    width: 60px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    outline: 10px solid #eb96a6;
+    border-radius: 100%;
+    position: relative;
+    transition: .3s;
+}
+.button5 .front {
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    width : 60px;
+    height: 50px;
+    top : -0px;
+    left : -0.5px;
+    background:linear-gradient(#ff5a78,#d54a60);
+    border : 1px solid #95323c ;
+    border-radius : 100%;
+    transform: translateY(-15%);
+  transition: .15s;
+}
+
+.button5 .back {
+    position : absolute;
+    display :flex;
+    z-index: 1;
+    width: 42px;
+    height : 32px;
+    top : -0px;
+    left : -0.5px;
+    border : 10px solid #95323c;  
+    border-radius: 100%;
+    
+}
+
+.button5 .front:active {
+    transform: translateY(-5%);
+    box-shadow: 0 0;
+}
+
+
+.button6{
+    padding: 10px;
+    border-radius: 999px;
+    position: relative;
+    border : 1px solid grey
+}
+.moon {
+    opacity: 0; /* !!!!!!!!!!! */
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: inset 16px 0px #777, inset 16px 0px 1px 2px #777;
+    -moz-box-shadow: inset 16px 0px #777, inset 16px 0px 1px 2px #777;
+  }
+
+  .button7 {
+    display: inline-flex;
+    position: relative;               
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1em;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0.7em;
+    width: 11em;
+    height: 5em;
+    color : white;
+    background-color:#183153; 
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 3px 5px 2px rgba(0,0,0,0.2);
+}
+
+.button7::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    background-color: #FFD401;
+    border-radius: 8px;
+}
+.button7:hover::after{
+    left: 0;
+    width: 11em;
+    height: 5em;;
+    transition: 0.6s;
+}
+
+.button7:active {
+    transform: translateY(5%);
+}
+
+.button7 span {
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+.button7:hover span {
+    color: #183153;
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    0% {
+    transform: scale(1);
+    }
+
+    50% {
+    transform: scale(0.8);
+    }
+
+    100% {
+    transform: scale(1);
+    }
+}
+
+.button8 {
+    position: relative;
+    background: transparent;
+    border : 0;
+    color : black;
+    padding : 2em 3em 2em 3em;
+    text-transform: uppercase;
+}
+
+.button8::before {
+    position: absolute;
+    content: '';
+    left: 0 ;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: scale(0%);
+}
+.button8::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width:0%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: scale(0);
+ 
+} 
+
+.button8:hover  {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+}
+
+.button8:hover:before{
+    border-color: #262626;
+    height: 100%;
+    transform:scale(100%);
+    transition: .3s transform linear, .3s height linear .3s;
+    
+}
+
+.button8:hover:after {
+    border-color: #262626;
+  height: 100%;
+  width: 100%;
+  transform: scale(100%);
+  transition: .3s transform linear, .3s height linear .3s;    
+}
+/* #17C3B2 
+    #111
+*/
+

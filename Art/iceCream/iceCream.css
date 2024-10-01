@@ -1,0 +1,150 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    user-select: none; 
+    -webkit-user-select: none;
+    background-color: crimson;
+}
+
+#stick{
+    position: relative;
+    top: 400px;
+    left: 700px;
+    width: 50px;
+    height: 150px;
+    background-color: #d28b51;
+    border-radius: 99px ;
+}
+
+#logoIceCream{
+    color: #4c2404;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 118px;
+    left: 13px;
+    border-radius: 99px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4c2404;
+}
+
+#mainIce {
+    position: relative;
+    top: -70px;
+    left: 625px;
+    width: 200px;
+    height: 350px;
+    background-color: #fffac8;
+    border-radius: 99px ;
+}
+
+#mainChocolat {
+        position: relative;
+        top: 70px;
+        width: 200px;
+        height: 280px;
+        background-color: #39200a;
+        border-radius: 5px  0 99px 99px;
+        
+}
+
+#croc1 {
+        position: relative;
+        z-index: 99;
+        top: -250px;
+        left: -15px;
+        width: 50px;
+        height: 50px;
+        background-color: crimson; 
+        border-radius: 99px ;
+}
+#croc2 {
+    position: relative;
+    top: -332px;
+    left: 97.8px;
+    width: 90px;
+    height: 73px;
+    background-color: #39200a; 
+    border-radius:9px 99px  0  0 ;
+    transform: skew(18deg);
+}
+
+#croc3 {
+    position: relative;
+    top: -405px;
+    left: 55px;
+    width: 80px;
+    height: 100px;
+    background-color: #39200a ; 
+    border-radius: 99px ;
+}
+
+#croc4 {
+    position: relative;
+    top: -480px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #fffac8; 
+    border-radius: 99px ;
+}
+
+#croc5 {
+    position: relative;
+    z-index: 99;
+    top: -540px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: crimson; 
+    border-radius: 99px ;
+}
+
+
+#face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+    position: relative;
+    top: -350px;
+}
+
+#eyes {
+    display: flex;
+    justify-content: space-between;
+    width: 145px;
+  }
+  
+  .eye {
+    width: 18px;
+    height: 18px;
+    background: #221505;
+    border-bottom: 2px solid #653a1d;
+    border-radius: 100%;
+  }
+  
+  .eye::before {
+    display: block;
+    content: '';
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 100%;
+  }
+  
+  #mouth {
+    width: 75px;
+    height: 25px;
+    background: #221505;
+    border-radius: 10px;
+    border-bottom: 2px solid #653a1d    ;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
